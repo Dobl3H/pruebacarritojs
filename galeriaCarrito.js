@@ -88,7 +88,7 @@ const pintatCarrito = () => {
     })
     items.appendChild(fragment);
 
-    pintarFooter();
+    /* pintarFooter(); */
 
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }

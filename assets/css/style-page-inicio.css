@@ -1,0 +1,86 @@
+/* PARA LA NAVBAR */
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
+
+/* 
+Para el fondo*/
+body{
+    background-image: url(../img/img-inicio/fondoColores.png);
+    background-color: #dadada;
+}
+
+
+/* Para el carrusel */
+.img-carousel{
+    height: calc(60vh - 76px);
+    width: calc(60vh - 76px);
+    object-fit: cover;
+}
+/* ---------------------Para el top de artistas */
+.card-img-top{
+    height: 18rem;
+    max-height: calc(60vh - 80px);
+    max-width: calc(60vh - 80px);
+    object-fit: cover;
+    }
+/* Esto es para que la imagen se conserve "redondita" cuando cambia el tamaño */
+@media screen and ( max-width: 992px){
+    .card-img-top{
+        max-height: calc(30vh - 80px);
+        max-width: calc(30vh - 80px);
+        object-fit: cover;
+        }
+    
+}
+.botongoartist{
+    margin-left: 25%;
+    display: inline-flexbox;
+}
+@media screen and ( max-width: 992px){
+    .botongoartist{
+        margin-left: 0%;
+        display: inline-flexbox;
+    }
+}
+/* ---------------------Para el top de obras más vendidas */
+.card-img-top-obras{
+max-height: calc(50vh - 10px);
+object-fit: cover;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+border-bottom-left-radius: 40%;
+border-bottom-right-radius: 40%;
+}
+
+/* ----------------------------Hover para top artist y top obras */
+/* Esto es para que las imagenes cambien de escala al ser apuntadas */
+@media (hover: hover){
+    .card-img-top:hover,
+    .card-img-top-obras:hover{
+        transform: scale(1.1);/* scale(1.05) */
+        transition:0.2s;
+        }
+}
+
+@media screen and ( max-width: 992px){
+    .cardcentrar{
+        align-items: center;
+        max-width: calc(40vh - 80px);
+    }
+    
+}
+.card{
+    background-color:rgba(255, 255, 255, 0);
+}
+/* 
+small: mayor a 576px 
+medium: mayor a 768 se deben ver 3
+large: mayor a 992 se deben ver 3
+*/
+.titulos{
+    font-family: "Aboreto";
+}

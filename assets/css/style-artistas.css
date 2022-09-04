@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url(/assets/img/fondo.png);
+    
+}
+.navbar{
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: 30px;
+}
+.nav-link{ color: azure;}
+.nav-link:hover {color:rgb(241, 153, 117)}
+.logo-akan{
+    min-width: 70px;
+    max-width: 70px;
+}
+.navbar-brand{color: azure;}
+.navbar-brand:hover{color:rgb(224, 104, 160)}
+.navbar-toogler{ 
+    font-size: 35px;
+    color: azure;
+}
+.img-portada{
+    background-image: url("/PROYECTO_AKAN/assets/img/portadaAkan.jpeg");
+    min-width: cover;
+    min-height: 500px;
+}
+
+
+
+/* -----------------Desde aqui es mio */
+
+.card-img-top{ /* tamaño imagen de las cartas */
+    height: 250px;
+    object-fit: cover;
+    transition: 2s;
+}
+.card-img-top:hover{ /* Efecto de las cartas */
+    scale: 110%;
+}
+
+h2{      /* Titulos */
+   font-family: Aboreto; 
+   color: rgb(73, 70, 70);
+}
+
+p{   /* texto */
+    font-family: Titillium Web;
+    font-size: large;
+}
+
+.card-title{ /* texto de las cartas */
+    font-family: Tililium Web;
+}
+
+.card-body1{
+    background-color: rgb(73, 70, 70);
+}
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
+
+
+/* Estilo botones redes sociales */
+.caja{
+    display: inline-flex;
+}
+.caja .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.caja .icon span{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: block;
+    color: rgb(16, 16, 16);
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+.caja .icon span i{
+    font-size: 25px;
+    line-height: 50px;
+}
+.caja .icon:hover span i{
+    color: #fff;
+}
+.caja .facebook:hover span{
+    background: #3B5999;
+}
+.caja .instagram:hover span{
+    background: #e1306c;
+}
+.caja .tiktok:hover span{
+    background: rgb(43, 41, 41);
+}
+.caja .twitter:hover span{
+    background: #46C1F6;
+}
+/* termina estilo de los botones */

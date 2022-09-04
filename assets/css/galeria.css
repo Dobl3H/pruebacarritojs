@@ -1,0 +1,78 @@
+HEAD:galeria.css
+/* Body galería */
+body { background-image: url(/assets/img/fondo.png);}
+
+h5{ font-family: 'Aboreto';}
+
+p{ font-family: 'Titillium Web'; }
+
+/* Navbar Galeria */
+.navbar{
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: 30px;}
+
+.nav-link{ color: azure;}
+.nav-link:hover {color:rgb(241, 153, 117)}
+
+.logo-akan{
+    min-width: 70px;
+    max-width: 70px;}
+
+.navbar-brand{color: azure;}
+.navbar-brand:hover{color:rgb(224, 104, 160)}
+
+.navbar-toogler{ 
+    font-size: 35px;
+    color: azure; }
+
+.card-img-top {
+    height: 200px;  
+    width: 350px;
+    object-fit: cover; }
+
+.img-fluid{  
+    width: 100%;
+    height: 520px;
+    object-fit: cover; }
+
+/* menú categorias de artistas */
+.page-link{
+    background-color: rgb(236, 141, 77);
+    color: rgb(255, 255, 255);}
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; }
+
+/* Body galería */
+body { background-image: url(/assets/img/fondo.png);}
+
+h5{ font-family: 'Aboreto';}
+
+p{ font-family: 'Titillium Web'; }
+
+
+/* CARTAS */
+.card-img-top {
+    height: 200px;  
+    width: auto;
+    object-fit: cover; }
+
+.img-fluid{  
+    width: 100%;
+    height: 520px;
+    object-fit: cover; }
+
+/* menú categorias de artistas */
+.page-link{
+    height: 50px;
+    background-color: rgb(236, 141, 77);
+    color: rgb(255, 255, 255);}
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; }
+
