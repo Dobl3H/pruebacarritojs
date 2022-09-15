@@ -1,10 +1,25 @@
-/* Estilo general */
+
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
-    background-color: #DCDCDC ;
-    
+    background-image: url(../img/fondoColores.png);
+    background-color: #dadada;
+ 
 }
+
+h1{
+    font-size: 46px;
+    text-align: center;
+}
+h2,h3{
+    font-size: 36px;
+    text-align: center;
+    }
+p{
+    font-size: 24px;
+    text-align: center;
+}
+
 .navbar{
     background-color: rgb(32, 32, 32);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -21,6 +36,11 @@ body {
 .navbar-toogler{ 
     font-size: 35px;
     color: azure;
+}
+.img-portada{
+    background-image: url("/PROYECTO_AKAN/assets/img/portadaAkan.jpeg");
+    min-width: cover;
+    min-height: 500px;
 }
 
 /* footer  */
@@ -86,9 +106,8 @@ body {
         grid-gap: 30px;
         padding: 35px 0px;}}
 
-/* Estilo de pagina */
-
-#img-carta{
-    height: 300px;
-    object-fit: cover;
+.img-logo{
+    min-width: 110px;
+    max-width: 115px;
 }
+

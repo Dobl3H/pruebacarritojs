@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- google fonts: Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- CDN Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- enlazar hoja de estilos -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style-pago.css">
+    <!-- Link para los iconos de redes sociales-->
+    <script src="https://kit.fontawesome.com/0a3ae2fadb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="img/png" href="../assets/img/faviconAkan.png" />
+
+
+
+    <title>Akan</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!--Creamos un contenedor para centrar -->
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoAkanW.png" class="logo-akan"
+                        alt="logo">Akan "Un lugar para el Arte"</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <ion-icon name="menu-outline" class="navbar-toogler"></ion-icon> <!-- menu responsivo para movil -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- mr a ml para q los links se vayan del lado derecho -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inspirate.html" id="Inspirate">Inspírate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pago/galeria.html" id="Galeria">Galería</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Artistas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pagina-artista1.html">Kalanchoe Sauty</a></li>
+                                <li><a class="dropdown-item" href="pagina-Artista2.html">JesuNoJesus</a></li>
+                                <li><a class="dropdown-item" href="pagina-artista3.html">Zintla Violenta</a></li>
+                                <li><a class="dropdown-item" href="pagina-Artista4.html">Casa Ku'u</a></li>
+                                <li><a class="dropdown-item" href="pagina-artista5.html">Jannethe_odowd</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conocenos.html" id="Artistas">Conócenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carritoPrincipalPrueba.html"><img src="https://img.icons8.com/arcade/25/000000/experimental-buy-arcade.png"/></a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Buscador y carrito de Compras -->
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+
+        <form class="form-inline">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg></button>
+        </form>
+    </nav>
+    <br><br><br><br><br><br>
+    <!-- Contenido pagina envio-pago-->
+    <main class="main">
+        <h1>PROCESO DE PAGO</h1>
+        <div class="container-fluid">
+            <div class="row pe-1">
+                <div class="col-12 col-sm-12 col-md-6 hi-1">
+                    <h2>Datos de envio</h2>
+                    <div class="container-fluid justify-content-center col-auto">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+
+                                        <button class="btn btn-link btn-block text-left btn-collap" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Direccion
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <form class="texto-formulario">
+                                            <label>Nombre(s)</label>
+                                            <br>
+                                            <input type="text" id="nombreEnvio" class="posicion form"
+                                                placeholder="Ejem. Oscar" required>
+                                            <br>
+                                            <label for="">Apellidos</label>
+                                            <br>
+                                            <input type="text" id="apellidoEnvio" class="posicion form"
+                                                placeholder="Ejem Avila Gonzalez" required>
+                                            <br>
+                                            <br>
+                                            <select name="Estado" id="estado"
+                                                class="posicion form select-estado inputEnvio">
+                                                <option disabled="" selected=""> Estado</option>
+                                                <option value="Aguascalientes">Aguascalientes</option>
+                                                <option value="Baja California">Baja California</option>
+                                                <option value="Baja California Sur">Baja California Sur</option>
+                                                <option value="Campeche">Campeche</option>
+                                                <option value="Ciudad de México">Ciudad de México</option>
+                                                <option value="Chiapas">Chiapas</option>
+                                                <option value="Chihuahua">Chihuahua</option>
+                                                <option value="Coahuila">Coahuila</option>
+                                                <option value="Colima">Colima</option>
+                                                <option value="Durango">Durango</option>
+                                                <option value="Guanajuato">Guanajuato</option>
+                                                <option value="Guerrero">Guerrero</option>
+                                                <option value="Hidalgo">Hidalgo</option>
+                                                <option value="Jalisco">Jalisco</option>
+                                                <option value="México">México</option>
+                                                <option value="Michoacán">Michoacán</option>
+                                                <option value="Morelos">Morelos</option>
+                                                <option value="Nayarit">Nayarit</option>
+                                                <option value="Nuevo León">Nuevo León</option>
+                                                <option value="Oaxaca">Oaxaca</option>
+                                                <option value="Puebla">Puebla</option>
+                                                <option value="Querétaro">Querétaro</option>
+                                                <option value="Quintana Roo">Quintana Roo</option>
+                                                <option value="San Luis Potosí">San Luis Potosí</option>
+                                                <option value="Sinaloa">Sinaloa</option>
+                                                <option value="Sonora">Sonora</option>
+                                                <option value="Tabasco">Tabasco</option>
+                                                <option value="Tamaulipas">Tamaulipas</option>
+                                                <option value="Tlaxcala">Tlaxcala</option>
+                                                <option value="Veracruz">Veracruz</option>
+                                                <option value="Yucatán">Yucatán</option>
+                                                <option value="Zacatecas">Zacatecas</option>
+                                            </select>
+                                            <br>
+                                        
+                                            <div class="mt-3" id="">
+                                                <label for="">Calle, N°. Exterior, N° Interior </label>
+                                                <br>
+                                                <input type="text" name="" id="grupoDireccion" class="posicion form"
+                                                    required>
+                                                <br>
+                                                <label for="">Colonia</label>
+                                                <br>
+                                                <input type="text" name="" id="colonia" class="posicion form" required>
+                                                <br>
+                                                <label for="">Municipio</label>
+                                                <br>
+                                                <input type="text" name="" id="municipio" class="posicion form "
+                                                    required>
+                                                <br>
+                                                <label for="">Codigo Postal</label>
+                                                <br>
+                                                <input type="text" maxlength="5" style="width:40%" class="posicion form"
+                                                    id="codigoPostal" required>
+                                                
+                                                <br>
+                                                <label for="">Telefono</label>
+                                                <br>
+                                                <input type="text" maxlength="10" style="width: 40%"
+                                                    class="posicion form" id="telefono" required>
+                                                    <br>
+                                                    <br>
+                                                    <button type="button" class="btn-lg" id="btn-envio"
+                                                        onclick="capturaEnvio()">Guardar Envío</button>
+                                                    <br>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Tarjeta de Credito o Debito
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <form class="texto-formulario formulario " id="formulario">
+                                            <br>
+                                            <label for="inputNumero">Numero de tarjeta</label>
+                                            <br>
+                                            <input type="text" class="posicion form" class="form-control "
+                                                id="inputNumero" maxlength="19" autocomplete="off"
+                                                placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                                            <br>
+                                            <label for="inputNombre">Nombre</label>
+                                            <br>
+                                            <input type="text" class="posicion form " id="inputNombre"
+                                                placeholder="Nombre" autocomplete="off" required>
+                                            <br>
+                                            <br>
+                                            <select name="mes" id="selectMes" class="posicion form" required
+                                                style="width: 40%">
+                                                <option disabled selected>Mes</option>
+                                            </select>
+                                            <br>
+                                            <label for="selectYear"> </label>
+                                            <br>
+                                            <select name="year" id="selectYear" class="posicion form"
+                                                style="width: 40%">
+                                                <option disabled selected>Año</option>
+                                            </select>
+                                            <br>
+                                            <label for="inputCCV">CCV</label>
+                                            <br>
+
+                                            <input type="text" class="posicion form" class="form-control " id="inputCCV"
+                                                maxlength="3" autocomplete="off" placeholder="CCV" style="width: 40%"
+                                                required>
+                                            <br>
+                                            <br>
+                                            <button type="button" class="btn-lg" id="btn-envio"
+                                                onclick="capturaPago()">Guardar
+                                                Tarjeta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Deposito en OXXO
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Favor de depositar a esta tarjeta xxxx-xxxx-xxxx-xxxx
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 d-md-block hi-2">
+                    <h2>Revision de pedido</h2>
+                    <div class="container justify-content-center">
+
+                        <!-- Aqui empieza mi regadero -->
+                        <table class="table">
+                            <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Cantidad</th>
+                                        <!-- <th scope="col">Acción</th> -->
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                            <tbody id="items"></tbody>
+                            <tfoot>
+                                <tr id="footer">
+                                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    <div class="container">
+        
+                    </div>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+        
+            <template id="template-footer">
+                <th scope="row" colspan="2">Total productos</th>
+                <td>10</td>
+
+                <td class="font-weight-bold">$ <span>5000</span></td>
+              </template>
+          
+              <template id="template-carrito">
+                <tr>
+                  <th scope="row">id</th>
+                  <td>Café</td>
+                  <td>1</td>
+<!--                   <td>
+                    <button class="btn btn-info btn-sm">Agregar</button>
+                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                  </td> -->
+                  <td>$ <span>500</span></td>
+                </tr>
+              </template>
+          
+              <template id="template-card">
+                <div class="col-12 mb-2 col-md-4">
+                  <div class="card">
+                    <img src="" alt="" class="card-img-top" />
+                    <div class="card-body">
+                      <h5>Titulo</h5>
+                      <p>precio</p>
+                      <button class="btn btn-dark">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </template>  
+      
+
+
+
+                        <div class="row justify-content-center"></div>
+                        <br><br>
+                        <button type="button" style="width: 80%" class="btn-lg form-btn" id="btn-terminar">
+                            Terminar pedido
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="pie-pagina" style="margin-top: 100px;">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../assets/img/logoFooter.png" alt="logotipo" width="7px">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>CONTACTO AKAN</h2>
+                <p>(52) 55 81712- 312</p>
+                <p>comunidadAkan@org.mx</p>
+                <P>Miguel Hidalgo 42, CDMX</P>
+            </div>
+            <div class="box">
+                <h2>SOCIAL NETWORKS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../assets/js/pagoproductos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../assets/js/pagos.js"></script>
+</body>
+
+</html>

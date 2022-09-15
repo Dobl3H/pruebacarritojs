@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  font-size: top;
+  background-image: url(assets/img/logo-ajan-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  min-height: 30px;
+}
+
+.nav-link {
+  color: azure;
+}
+.nav-link:hover {
+  color: rgb(241, 153, 117);
+}
+
+.logo-akan {
+  min-width: 70px;
+  max-width: 70px;
+}
+
+.navbar-brand {
+  color: azure;
+}
+.navbar-brand:hover {
+  color: rgb(224, 104, 160);
+}
+
+.navbar-toogler {
+  font-size: 35px;
+  color: azure;
+}
+.dropdown-menu {
+  /* Menú desplegable */
+  background-color: rgb(32, 32, 32);
+}
+.dropdown-item {
+  color: antiquewhite;
+}
+
+.text-center {
+  font-size: 40px;
+  color: rgb(131, 130, 130);
+}
+
+.form-group {
+  padding: 0;
+  margin: auto;
+  color: slategray;
+}
+
+#login {
+  position: static;
+}
+#img {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+#contraseña {
+  padding: 0;
+  border: 0;
+}
+
+#logo {
+  height: 100%;
+  width: 50%;
+}
+
+.img-logo {
+  min-width: 110px;
+  max-width: 115px;
+}
+/* Footer */
+.pie-pagina {
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 190px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: rgb(46, 46, 46);
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+  align-items: center;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgb(32, 32, 32);
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}

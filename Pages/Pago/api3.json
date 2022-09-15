@@ -1,0 +1,44 @@
+[
+  {
+    "precio": 120,
+    "id": 31,
+    "title": "Jannethe_odowd Ilustradora Mexicana",
+    "descripcion":"Cuadro Colibrí",
+    "thumbnailUrl": "https://i.ibb.co/tMztXxm/Art1.jpg"
+  },
+  {
+    "precio": 120,
+    "id": 32,
+    "title": "Jannethe_odowd Ilustradora Mexicana",
+    "descripcion":"Cuadro Kodama-Ghibli",
+    "thumbnailUrl": "https://i.ibb.co/K2ByrKW/Art2.jpg"
+  },
+  {
+    "precio": 120,
+    "id": 33,
+    "title": "Jannethe_odowd Ilustradora Mexicana",
+    "descripcion":"Cuadro Espíritu del Rabano",
+    "thumbnailUrl": "https://i.ibb.co/2K1zTCJ/Art3.jpg"
+  },
+  {
+    "precio": 120,
+    "id": 34,
+    "title": "Jannethe_odowd Ilustradora Mexicana",
+    "descripcion":"Cuadro Frente al mar",
+    "thumbnailUrl": "https://i.ibb.co/yNwgQtw/Art4.jpg"
+  },
+  {
+    "precio": 120,
+    "id": 35,
+    "title": "Jannethe_odowd Ilustradora Mexicana",
+    "descripcion":"Cuadro Tortuga marina",
+    "thumbnailUrl": "https://i.ibb.co/TLX7Zkd/Art5.jpg"
+  },
+  {
+    "precio": 120,
+    "id": 36,
+    "title": "Jannethe_odowd Ilustradora Mexicana",
+    "descripcion":"Cuadro Retrato peludito",
+    "thumbnailUrl": "https://i.ibb.co/cXZtVBJ/Art6.jpg"
+  }
+]

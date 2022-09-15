@@ -1,0 +1,123 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Titillium Web", sans-serif; 
+}
+
+.navbar {
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  min-height: 30px;
+}
+
+.nav-link {
+  color: azure;
+}
+.nav-link:hover {
+  color: rgb(241, 153, 117);
+}
+
+.logo-akan {
+  min-width: 70px;
+  max-width: 70px;
+}
+
+.navbar-brand {
+  color: azure;
+}
+.navbar-brand:hover {
+  color: rgb(224, 104, 160);
+}
+
+.navbar-toogler {
+  font-size: 35px;
+  color: azure;
+}
+
+.img-portada {
+  background-image: url("../img/portadaAkan.jpeg");
+  min-width: cover;
+  min-height: 500px;
+}
+
+#h2-market {
+  text-align: center;
+}
+
+.container-market {
+  margin: 50px;
+  column-count: 2;
+}
+
+#nombreCompleto {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#calle {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#municipio {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#numeroExterior {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#numeroInterior {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#referencias {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#codigoPostal {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#estado {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#colonia {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+#numeroTelefonico {
+  border-radius: 15px;
+  background-color: rgb(203, 199, 199);
+}
+
+.boton-market {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boton-market {
+  background-color: rgb(203, 199, 199);
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  color: rgb(98, 95, 95);
+}
+
+#boton-market:hover {
+  color: rgb(1, 1, 1);
+  box-shadow: 0 4px 16px rgb(120, 122, 123);
+  transition: all 0.2s ease;
+}
+.footer {
+    background-color: gray;
+    display: block;
+}
