@@ -1,4 +1,7 @@
-function registro() {
+
+const formulario = document.getElementById('formRegistro');
+
+formulario.addEventListener('submit', (e) => {
     let nombre = document.getElementById("name").value;
     let correoE = document.getElementById("correo").value;
     let contra1 = document.getElementById("palabraSecreta1").value;
@@ -15,7 +18,7 @@ function registro() {
     } else if (!expresionCorreo.test(correoE)) {
       alert("El correo es invalido");
       document.getElementById("correo").focus();
-      return false;
+      //return false;
     } else if (contra1 == "") {
       //alert('Ingrese Contraseña');
       document.getElementById("palabraSecreta1").focus();
@@ -25,7 +28,7 @@ function registro() {
           "\nLa contraseña debe tener de 4 a 12 caracteres"
       );
       document.getElementById("palabraSecreta1").focus();
-      return false;
+      //return false;
     } else if (contra2 == "") {
       //alert('Confirme Contraseña ');
       document.getElementById("palabraSecreta2").focus();
@@ -35,7 +38,7 @@ function registro() {
           "\nLa contraseña debe tener de 4 a 12 caracteres"
       );
       document.getElementById("palabraSecreta2").focus();
-      return false;
+      //return false;
     } else if (date == "") {
       //alert('Ingrese Fecha de Nacimiento');
       document.getElementById("fecha").focus();
@@ -53,7 +56,7 @@ function registro() {
       let registroJson = JSON.stringify(registro);
       console.log(registro);
       console.log(registroJson);
-      return false;
+      
     }
-  }
-  
+      e.preventDefault();
+});

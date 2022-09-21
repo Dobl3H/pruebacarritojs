@@ -1,6 +1,8 @@
 body {
-  font-family: "Roboto", sans-serif;
-  font-family: "Titillium Web", sans-serif; 
+  font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url(../img/fondoColores.png);
+  
 }
 
 .navbar {

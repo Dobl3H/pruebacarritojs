@@ -1,48 +1,17 @@
-body {
-    font-family: 'Roboto', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-background-color: #DCDCDC ;
-}
-
-.navbar{
-    background-color: rgb(32, 32, 32);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    min-height: 30px;
-}
-
-.nav-link{ color: azure;}
-.nav-link:hover {color:rgb(241, 153, 117)}
-
-.logo-akan{
-    min-width: 70px;
-    max-width: 70px;
-}
-
-.navbar-brand{color: azure;}
-.navbar-brand:hover{color:rgb(224, 104, 160)}
-
-.navbar-toogler{ 
-    font-size: 35px;
-    color: azure;
-}
-
+* {
+    box-sizing: border-box;
+ 
+  }
+  
+  body {
+     font-size: top;
+     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 .carrito{
     background-color: white;
+
 }
 
 
-.footer{
-    background-color: black;
-   
-}
-
-.img-logo{
-    min-width: 110px;
-    max-width: 115px;
-}
-
-/* FOOTER FINAL */
-.footer {
-    background-color: #3f4140;
-    display: block;
-}

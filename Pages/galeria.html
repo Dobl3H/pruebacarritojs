@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- enlazar hoja de estilos -->
+    
     <link rel="stylesheet" href="../assets/css/galeria.css">
+    <link rel="stylesheet" href="../assets/css/style-generales.css">
     <!-- google fonts: Aboreto, T-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,52 +25,51 @@
   </head>
 
   <body>
-    <div class="fixed-top">
-      <nav class="navbar navbar-expand-lg">
-          <div class="container"> <!--Creamos un contenedor para centrar -->
-          <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un lugar para el Arte"</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <ion-icon name="menu-outline" class="navbar-toogler"></ion-icon> <!-- menu responsivo para movil -->
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">  <!-- mr a ml para q los links se vayan del lado derecho -->
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="inspirate.html" id="Inspirate">Inspírate</a>
-              </li>       	
-              <li class="nav-item">
-                <a class="nav-link" href="galeria.html" id="Galeria">Galería</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Artistas
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pagina-artista1.html">Kalanchoe Sauty</a></li>
-                  <li><a class="dropdown-item" href="pagina-Artista2.html">JesuNoJesus</a></li>
-                  <li><a class="dropdown-item" href="pagina-artista3.html">Zintla Violenta</a></li>
-                  <li><a class="dropdown-item" href="pagina-Artista4.html">Casa Ku'u</a></li>
-                  <li><a class="dropdown-item" href="pagina-artista5.html">Jannethe_odowd</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Conocenos.html" id="Artistas">Conócenos</a>
-              </li>
-            </ul>
-          </div>
-          </div>
-      </nav>
-      <!-- Barra de búsqueda -->
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="carrito.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAchJREFUSEuNls1RAzEMhT9VEEogFQAdpAOGCsg5ORA6oAPCIbkCHdABQwehAqACQgVmdr1ry7YEm0PGo8j6edJ7jqA+AoT+q7QKIdmbn7XrcM4+Qnem/y6CNp5GmNKUi+uChhRO7Kq9eNVlp+O+2iFw7MDDyctu2F0QlK8FUk6tIwxnjbWuGsIBuOja0BCpBAMUf3agR6cz9ucv4HQcbz3kLchNrijBmRfB6KZalluEbbd67Qxi5g9/zP8u3M9Q/bGHqAE5wnKAcObupsEVlfYZWI53iw4U5Bvgvt0unw4q5xz4HLnVJogxToDvSR2UG/UGLIoRNfPKhhfgchqFk9cV0N1LUuBKhcAywGMcVKZ+ebnQqPcA57W/4oEOlNo4AjOBeehwrWRriswUW5RVMwH7ROBa4CFAN/hCFzWTc5eW2PlAL0Be7c1vkoknyAZVi4x3ApsgzOp3wng4tAAkcpv1N0KW9qIJm18pQ1JbJmtRyVPcIawI7AXWCgrPrhZV1a+3oipGwxsFJr6tQTE2zaDm1hQu7ULfgewhrOOFPswOWAF7YLDrcJaaelLczMAjYFmv8yYblw1WeYtQ9uDskP6r0rgY2+L5/ALyscYg6RQ2YAAAAABJRU5ErkJggg=="/></a>
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </nav>
-      </div>
+    <!-- Navbar -->
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"> <!--Creamos un contenedor para centrar -->
+        <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un lugar para el Arte"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="menu-outline" class="navbar-toogler"></ion-icon> <!-- menu responsivo para movil -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">  <!-- mr a ml para q los links se vayan del lado derecho -->
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inspirate.html" id="Inspirate">Inspírate</a>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link" href="Pago/galeria.html" id="Galeria">Galería</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Artistas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pagina-artista1.html">Kalanchoe Sauty</a></li>
+                <li><a class="dropdown-item" href="pagina-Artista2.html">JesuNoJesus</a></li>
+                <li><a class="dropdown-item" href="pagina-artista3.html">Zintla Violenta</a></li>
+                <li><a class="dropdown-item" href="pagina-Artista4.html">Casa Ku'u</a></li>
+                <li><a class="dropdown-item" href="pagina-artista5.html">Jannethe_odowd</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Conocenos.html" id="Artistas">Conócenos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carritoPrincipalPrueba.html"><img src="https://img.icons8.com/arcade/25/000000/experimental-buy-arcade.png"/></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="LogIn.html"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-login-web-store-flaticons-lineal-color-flat-icons-3.png"/></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>    
+  </div>
   
 
    
@@ -192,7 +193,8 @@
               <h5 class="card-title">Casa Ku'u</h5>
               <p class="card-text">   Casa Ku'u es una tienda Oaxaqueña creada por mujeres, 
                 para difundir el trabajo de productoras y emprendedoras mexicanas.</p>
-              <p class="card-text"><small class="text-muted"><img src="https://img.icons8.com/metro/25/000000/facebook-new--v2.png"/> facebook.com/casaku.u</small></p>
+                <a href="https://facebook.com/casaku.u" target="_blank">
+              <p class="card-text"><small class="text-muted"><img src="https://img.icons8.com/metro/25/000000/facebook-new--v2.png"/> facebook.com/casaku.u</small></p></a>
             </div>
           </div>
         </div>
@@ -295,7 +297,8 @@
               <h5 class="card-title">Kalanchoe Sauty</h5>
               <p class="card-text">Es un emprendimiento generado por dos mujeres.
                 Este proyecto esta enfocado en la venta de macetas y figuras de cerámica pintadas a mano. Venta de suculentas y collares de porcelana fría igualmente pintadas a mano.  </p>
-              <p class="card-text"><small class="text-muted"><img src="https://img.icons8.com/metro/25/000000/facebook-new--v2.png"/> facebook.com/Kalanchoe-Sauty</small></p>
+                <a href="https://facebook.com/Kalanchoe-Sauty" target="_blank">
+                <p class="card-text"><small class="text-muted"><img src="https://img.icons8.com/metro/25/000000/facebook-new--v2.png"/> facebook.com/Kalanchoe-Sauty</small></p></a>
             </div>
           </div>
         </div>
@@ -394,7 +397,8 @@
             <p class="card-text">Ilustradora Mexicana <br> Trabajo de ilustación basado en la inspiración
             y conceptualización de paisajes, entornos; sus pinturas
           son basadas en técnica con acuarela.</p>
-            <p class="card-text"><small class="text-muted"><img src="https://img.icons8.com/ios-glyphs/25/000000/instagram-new.png"/>instagram.com/jannethe_odowd</small></p>
+          <a href="https://instagram.com/jannethe_odowd" target="_blank">
+            <p class="card-text"><small class="text-muted"><img src="https://img.icons8.com/ios-glyphs/25/000000/instagram-new.png"/>instagram.com/jannethe_odowd</small></p></a>
           </div>
         </div>
       </div>
@@ -502,8 +506,9 @@
               llevando su pasión, a tener un emprendimiento a tráves de su trabajo en diversos eventos. 
             </p>
             <p class="card-text"><small class="text-muted">
+              <a href="https://facebook.com/JesuNoJesus" target="_blank">
               <img src="https://img.icons8.com/ios-glyphs/25/000000/facebook-new.png"/>  facebook.com/JesuNoJesus
-              <br><img src="https://img.icons8.com/ios-glyphs/25/000000/instagram-new.png"/> instagram.com/jesu_no_jesus</small></p>
+            </a><br> <a href="https://instagram.com/jesu_no_jesus" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/000000/instagram-new.png"/> instagram.com/jesu_no_jesus</small></p></a>
           </div>
         </div>
       </div>
@@ -601,8 +606,9 @@
             <h5 class="card-title">Zitla Violenta</h5>
             <p class="card-text"> Mujer emprendedora y artesana. Su trabajo se basa en el bordado con punto de cruz,
               personalizando y plasmando ideas desde un contexto social en Latinoamérica. </p>
-            <p class="card-text"><img src="https://img.icons8.com/ios-glyphs/25/000000/facebook-new.png"/> facebook.com/zitlali.villalba
-            <br><img src="https://img.icons8.com/ios-glyphs/25/000000/instagram-new.png"/> instagram.com/zitlaviolenta</p>
+              <a href="https://facebook.com/zitlali.villalba" target="_blank">
+              <p class="card-text"><img src="https://img.icons8.com/ios-glyphs/25/000000/facebook-new.png"/> facebook.com/zitlali.villalba
+              </a><br><a href="https://instagram.com/zitlaviolenta" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/000000/instagram-new.png"/> instagram.com/zitlaviolenta</p></a>
           </div>
         </div>
       </div>
