@@ -48,9 +48,8 @@ const pintarFooter=()=>{
     footer.appendChild(fragment)
     
     //Vaciar despues de que paga
-    const btnFinalizarCompra=document.getElementById('btn-terminar')
+    const btnFinalizarCompra=document.getElementById('btnabrir')
     btnFinalizarCompra.addEventListener('click',()=>{
-        alert("Estamos validando su información")
         carrito={}
         pintarCarrito()
     })
@@ -65,3 +64,94 @@ document.addEventListener('DOMContentLoaded',()=>{
         pintarCarrito()
     }
 })
+
+
+//-------------------Para enlazar con el backend---------------------------
+const boton = document.getElementById('btnabrir');
+
+//para que solo cuando oprima el botón se genere todo
+boton.addEventListener('click',e=>{
+    e.preventDefault();
+    //como es más de un registro:
+    idsNuevosElementos=[]
+    for (const property in carrito) {
+        subobj=carrito[property]
+        jason=JSON.stringify({
+            precio_por_unidades: subobj.precio,
+            unidades: subobj.cantidad
+            /* idProducto: subobj.id */
+        })
+        console.log("soy el json ",jason);
+        localStorage.setItem('id_producto',subobj.id)
+        
+    
+        fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/detalledepedido', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                precio_por_unidades: subobj.precio,
+                unidades: subobj.cantidad,
+                id_cliente: {"id_cliente":
+                localStorage.getItem('id_cliente')
+            }
+            }),
+        })
+
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                id_producto=subobj.id
+                //"Para que se rellene aquí la otra tabla"
+                fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/productosypedidos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        id_producto: {
+                            "id_producto":1
+                        },
+                        id_pedido: {
+                            "id_pedido":data.id_pedido
+                        }
+                    }),
+                })
+                .then(response => response.json())
+                .then(dataProductosYpedidos => {
+                    console.log('Success:', dataProductosYpedidos);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+            
+
+                //Para pago
+                fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/metodopago',{
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                    body: JSON.stringify({
+                    numTarjeta:localStorage.getItem('numTarjeta'),
+                    nombreUsuarioTarjeta:localStorage.getItem('nombreTarjeta'),
+                    mesTarjeta:localStorage.getItem('mes'), 
+                    yearTarjeta:localStorage.getItem('year'),
+                    ccv:localStorage.getItem('ccv'),
+                    id_pedido:{
+                        id_pedido:data.id_pedido
+                    }
+                })
+            })
+
+
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+});
+//console.log("arreglodebe",localStorage.getItem('id'));
+//La tabla de productos y pedidos se debe rellenar aquí
+

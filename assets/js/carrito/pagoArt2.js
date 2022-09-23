@@ -35,7 +35,7 @@ const setCarrito = (objeto) => {
   console.log("obj",objeto);
   const producto = {
     id: objeto.querySelector(".btn-dark").dataset.id,
-    title: objeto.querySelector("h5").textContent,
+    title: objeto.querySelector("p").textContent,
     precio: objeto.querySelector("h6").textContent.replace("$",""),
     cantidad: 1,
   };

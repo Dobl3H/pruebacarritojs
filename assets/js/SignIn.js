@@ -6,9 +6,13 @@ formulario.addEventListener('submit', (e) => {
     let correoE = document.getElementById("correo").value;
     let contra1 = document.getElementById("palabraSecreta1").value;
     let contra2 = document.getElementById("palabraSecreta2").value;
-    let date = document.getElementById("fecha").value;
+   let date = document.getElementById("fecha").value;
     const expresionCorreo = /\w+@\w+\.+[a-z]/;
     const expresionPass = /^.{4,12}$/;
+
+
+
+
     if (nombre == "") {
       //alert('Ingrese Nombre');
       document.getElementById("name").focus();
@@ -39,8 +43,10 @@ formulario.addEventListener('submit', (e) => {
       );
       document.getElementById("palabraSecreta2").focus();
       //return false;
+    } else if (contra1 != contra2){ //para que las contraseñas sean iguales
+      alert("La contraseñas deben ser iguales")
     } else if (date == "") {
-      //alert('Ingrese Fecha de Nacimiento');
+      alert('Ingrese Fecha de Nacimiento');
       document.getElementById("fecha").focus();
     } else {
       console.log(
@@ -59,4 +65,57 @@ formulario.addEventListener('submit', (e) => {
       
     }
       e.preventDefault();
+/***********************************CONEXIÓN CON LA API */
+
+      fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/registro',  {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nombre_usuario: nombre,
+            email: correoE,      
+            password: contra1,
+            fecha_Nacimiento: date,
+            
+        }),
+      })
+          //Para guardar el id_registro:
+      .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+          
+            localStorage.setItem('id_registro',data.id_registro); //para guardar el id_registro en el LocalStorage
+            window.location.replace("Login.html");
+
+           
+
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+
+            
+        });
+
+          /* .then(resp => {
+            if( resp.ok) {
+                  
+                  url = window.location;
+                  const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+                  location.href = path +  'pago.html';
+            }
+        })  */
+        
+        /* .catch((error) => {
+            console.error('Error:', error);
+        });  */
+
 });
+// ************ LOCAL STORAGE
+
+/* localStorage.setItem(registroJson);
+if (localStorage.getItem('registroJson')){
+  registroJson=JSON.parse(localStorage.getItem('registroJson'))
+  console.log("exp",registroJson);
+} */
+

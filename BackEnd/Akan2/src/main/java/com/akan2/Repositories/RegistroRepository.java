@@ -8,6 +8,8 @@ import com.akan2.Models.RegistroModels;
 
 
 @Repository 
-public interface RegistroRepository extends CrudRepository<RegistroModels,Long>{
-
+public interface RegistroRepository extends CrudRepository<RegistroModels,Integer>{
+	public abstract RegistroModels findByEmail(String email);
 }
+
+

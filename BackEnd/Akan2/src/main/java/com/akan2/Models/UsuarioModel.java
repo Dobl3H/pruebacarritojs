@@ -19,13 +19,18 @@ public class UsuarioModel {
 	@Column(nullable = false)
 	
 	private long id_cliente;
-	@Column(nullable = false)
-    private String password;
+	//@Column(nullable = false)
+    //private String password;
 	
 	private String nombre_usuario;
 	private String apellido;
+	private String estado;
 	private String direccion;
+	private String colonia;
+	private String municipio;
+	private String codigo;
 	private String telefono;
+	
 	
 	@ManyToOne
     @JoinColumn(nullable = false, name = "id_registro")
@@ -43,13 +48,13 @@ public class UsuarioModel {
 		this.id_cliente = id_cliente;
 	}
 
-	public String getPassword() {
+	/*public String getPassword() {
 		return password;
 	}
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
+	}*/
 
 	public String getNombre_usuario() {
 		return nombre_usuario;
@@ -98,6 +103,38 @@ public class UsuarioModel {
 	public void setUsuarioydetallepedido(List<DetalleDePedidoModels> usuarioydetallepedido) {
 		this.usuarioydetallepedido = usuarioydetallepedido;
 	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getColonia() {
+		return colonia;
+	}
+
+	public void setColonia(String colonia) {
+		this.colonia = colonia;
+	}
+
+	public String getMunicipio() {
+		return municipio;
+	}
+
+	public void setMunicipio(String municipio) {
+		this.municipio = municipio;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
 	
 	
 	
@@ -106,3 +143,4 @@ public class UsuarioModel {
 
 
 }
+

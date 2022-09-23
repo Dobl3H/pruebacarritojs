@@ -1,42 +1,42 @@
 [
   {
     "precio": 150,
-    "id": 11,
+    "id": 1,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Collar corazón-flor azul",
     "thumbnailUrl": "https://i.ibb.co/dM6j2BL/Art1.jpg"
   },
   {
     "precio": 150,
-    "id": 12,
+    "id": 2,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Collar flor amarilla-roja",
     "thumbnailUrl": "https://i.ibb.co/85jpB91/Art2.jpg"
   },
   {
     "precio": 150,
-    "id": 13,
+    "id": 3,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Collar flor amarillo-fuego",
     "thumbnailUrl": "https://i.ibb.co/MCVv1F6/Art3.jpg"
   },
   {
     "precio": 215,
-    "id": 14,
+    "id": 4,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Juego collar flor-mixta 2pzas.",
     "thumbnailUrl": "https://i.ibb.co/wJp3Yp4/Art4.jpg"
   },
   {
     "precio": 220,
-    "id": 15,
+    "id": 5,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
-    "descripcion":"Collar de tejito con Chaquira roja",
+    "descripcion":"Collar tejido con Chaquira roja",
     "thumbnailUrl": "https://i.ibb.co/Gdggf8x/Art5.jpg"
   },
   {
     "precio": 480,
-    "id": 16,
+    "id": 6,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Collar y aretes de corazón dorado.",
     "thumbnailUrl": "https://i.ibb.co/X3nDf9c/Art6.jpg"

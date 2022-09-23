@@ -120,7 +120,7 @@
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <form class="texto-formulario">
+                                        <form class="texto-formulario" id="datosEnvio" >
                                             <label>Nombre(s)</label>
                                             <br>
                                             <input type="text" id="nombreEnvio" class="posicion form"
@@ -197,8 +197,8 @@
                                                     class="posicion form" id="telefono" required>
                                                     <br>
                                                     <br>
-                                                    <button type="button" class="btn-lg" id="btn-envio"
-                                                        onclick="capturaEnvio()">Guardar Envío</button>
+                                                    <button type="submit" class="btn-lg" id="btn-envio"
+                                                        >Guardar Envío</button>
                                                     <br>
                                             </div>
                                         </form>
@@ -252,8 +252,8 @@
                                                 required>
                                             <br>
                                             <br>
-                                            <button type="button" class="btn-lg" id="btn-envio"
-                                                onclick="capturaPago()">Guardar
+                                            <button class="btn-lg" id="btn-envio"
+                                                type="submit">Guardar
                                                 Tarjeta</button>
                                     </div>
                                 </div>

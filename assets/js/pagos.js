@@ -48,8 +48,13 @@ telefono.addEventListener('keyup', (e) => {
         // Eliminar letras
         .replace(/\D/g, '');
         });
+////////////////////////// aqui voy a editar--NEK
+//function capturaEnvio() {
+    const $formulario = document.getElementById('datosEnvio');
+    $formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-function capturaEnvio() {
+
     let nombreEn = document.getElementById('nombreEnvio').value;
     let apellidoEnvio = document.getElementById('apellidoEnvio').value;
     let estadoEnvio = document.getElementById('estado').value;
@@ -61,19 +66,99 @@ function capturaEnvio() {
     const datosEnvioArreglo = {nombre:nombreEn,apellido:apellidoEnvio, estado:estadoEnvio, direccion: direccionEnvio, colonia: coloniaEnvio,municipio: municipioEnvio, codigo: codigoPostalEnvio, telefono: telefonoEnvio}
     const jsonEnvio = JSON.stringify(datosEnvioArreglo);
     console.log(jsonEnvio);
-}
+    console.log(localStorage.getItem('id_registro'));
+    
+    //if (nombreEn === "" && apellido === "" && estado === "" && direccion === "" && colonia === "" && municipio === "" && codigo === "" && telefono === "") return alert("Todos los espacios están vacíos"); 
+    
+    fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/usuarios',  {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nombre_usuario: nombreEn,
+            apellido:apellidoEnvio,
+            estado:estadoEnvio,
+            direccion:direccionEnvio,
+            colonia:coloniaEnvio,
+            municipio:municipioEnvio,
+            codigo:municipioEnvio,
+           telefono:telefonoEnvio,
+           registro:{
+            id_registro:localStorage.getItem('id_registro')
+           }
+        })
 
-function capturaPago() {
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success id_cliente:', data.id_cliente);
+        localStorage.setItem('id_cliente',data.id_cliente)
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+ 
+    })
+//};
+/////////////////////////////////Hasta aki------------nek
+//////////////////Oscar //////////
+const $formulario1 = document.getElementById('formulario');
+$formulario1.addEventListener('submit',(e) =>{
+    e.preventDefault();
+
     let numTarjeta = document.getElementById('inputNumero').value;
     let nombreTarjeta =document.getElementById('inputNombre').value;
     let mes = document.getElementById('selectMes').value;
     let year = document.getElementById('selectYear').value;
     let codSeguridad = document.getElementById('inputCCV').value;
-    const capturaPagoArreglo = {numeroT:numTarjeta,nombreT:nombreTarjeta,mes:mes, year:year,ccv:codSeguridad}
-    console.log(capturaPagoArreglo);
-    const jsonPago = JSON.stringify(capturaEnvio);
+    localStorage.setItem('numTarjeta',numTarjeta)
+    localStorage.setItem('nombreTarjeta',nombreTarjeta)
+    localStorage.setItem('mes',mes)
+    localStorage.setItem('year',year)
+    localStorage.setItem('codSeguridad',codSeguridad)
+
+    const capturaPagoArreglo = {
+            numTarjeta:numTarjeta,
+            nom_pago:nombreTarjeta,
+            mesTarjeta:mes, 
+            yearTarjeta:year,
+            ccv:codSeguridad}
+            console.log(capturaPagoArreglo.nom_pago);
+
+    const jsonPago = JSON.stringify(capturaPagoArreglo);
     console.log(jsonPago);
-}
+
+/*         fetch('http://localhost:8080/metodopago',{
+            method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+                body: JSON.stringify({
+                numTarjeta:numTarjeta,
+                nombreUsuarioTarjeta:nombreTarjeta,
+                mesTarjeta:mes, 
+                yearTarjeta:year,
+                ccv:codSeguridad,
+                id_pedido:{
+                    id_pedido:1
+                }
+            })
+        })
+
+        .then(resp => {
+
+        })
+
+        .catch((error)=> {
+            console.error('Error:', error);
+    }); */
+
+
+    })
+
+/////////Termina Oscar /////////////////
 
 // VENTANA MODAL
 document.getElementById("btnabrir").addEventListener ("click",function(){

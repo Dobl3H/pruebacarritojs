@@ -47,6 +47,13 @@ public class UsuarioService {
 		return usuarioRepository.save(usuarioModel);
 	}
 	
+	
+	//buscar por tel
+	public ArrayList<UsuarioModel> obtenerPorTelefono(String telefono){
+		return usuarioRepository.findByTelefono(telefono);
+	}
+	
+	
 	//buscar por prioridad
 //	public ArrayList<UsuarioModel> obtenerPorPrioridad(Integer prioridad) {
 //		return usuarioRepository.findByPrioridad(prioridad);

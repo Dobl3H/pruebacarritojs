@@ -24,9 +24,8 @@ public class PagoModel {
     private DetalleDePedidoModels id_pedido;
     
     
-    private long id_cliente;
-    private String tipoPago;
-    private String num_Tarjeta;
+    private String nombreUsuarioTarjeta;
+    private String numTarjeta;
     private Integer yearTarjeta;
     private Integer mesTarjeta;
     private Integer ccv;
@@ -42,23 +41,17 @@ public class PagoModel {
 	public void setId_pedido(DetalleDePedidoModels id_pedido) {
 		this.id_pedido = id_pedido;
 	}
-	public long getId_cliente() {
-		return id_cliente;
+	public String getNombreUsuarioTarjeta() {
+		return nombreUsuarioTarjeta;
 	}
-	public void setId_cliente(long id_cliente) {
-		this.id_cliente = id_cliente;
+	public void setNombreUsuarioTarjeta(String nombreUsuarioTarjeta) {
+		this.nombreUsuarioTarjeta = nombreUsuarioTarjeta;
 	}
-	public String getTipoPago() {
-		return tipoPago;
+	public String getNumTarjeta() {
+		return numTarjeta;
 	}
-	public void setTipoPago(String tipoPago) {
-		this.tipoPago = tipoPago;
-	}
-	public String getNum_Tarjeta() {
-		return num_Tarjeta;
-	}
-	public void setNum_Tarjeta(String num_Tarjeta) {
-		this.num_Tarjeta = num_Tarjeta;
+	public void setNumTarjeta(String numTarjeta) {
+		this.numTarjeta = numTarjeta;
 	}
 	public Integer getYearTarjeta() {
 		return yearTarjeta;
@@ -78,8 +71,7 @@ public class PagoModel {
 	public void setCcv(Integer ccv) {
 		this.ccv = ccv;
 	}
-
+	
 
     
-
 }
